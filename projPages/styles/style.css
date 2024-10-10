@@ -1,0 +1,156 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../imgs/analyticsBG.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.overlay1{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(grey 10%,transparent 15% 75%,brown 80%);
+    z-index: 1;
+    padding-block: 10VH;
+
+}
+
+.page2 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../imgs/wordpress.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.overlay2 {
+    height: 100vh;
+    background: linear-gradient(brown 10%, transparent 15% 75%, gold 80%);
+    height: 100%;
+    width: 100%;
+    padding-block: 10VH;
+
+}
+#shimonIMG{
+    height: 60vh;
+    box-shadow: 2px 2px 5px grey;
+}
+#shimonIMG>img{
+    height: 100%;
+    size: cover;
+}
+#content1{
+    display:flex;
+    padding-block: 10vh;
+}
+#aboutme{
+    background: rgba(0, 0, 0, 0.2);
+    height: 40vh;
+    margin-top: 10vh;
+    padding: 3rem;
+    width: 60%;
+}
+h2{
+    font-size: 5rem;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+#thisshimon{
+    padding-left: 2rem;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+.content2{
+    padding-inline: 5%;
+    margin-top: 20vh;
+    display: flex;
+    height: 60vh;
+    justify-content: space-between;
+}
+#wordpress1,#wordpress2{
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 30%;
+}
+header{
+    background: #36454F;
+    display: flex;
+    height: 5vh;
+    font-size: 3rem;
+    padding: 1rem;
+    color: white;
+    justify-content: space-evenly;
+    font-weight: 800;
+    position: sticky;
+    top: 0;
+}
+.page3 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../imgs/pathofexile.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.overlay3{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(gold 10%,transparent 15% 75%,rgb(231, 231, 231) 80%);
+    z-index: 1;
+    padding-block: 10VH;
+
+}
+.passion{
+    padding-top: 2rem;
+    padding-inline: 5rem;
+}
+.passion>p{
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px black;
+}
+
+.game>a>img{
+    object-fit: contain;
+    height: 200px;
+}
+.gamegallery{
+    display: flex;
+    justify-content: space-evenly;
+}
+#WPP{
+    font-size: 2rem;
+
+}
+.headerLink{
+    font-size: 2rem;
+    text-anchor: middle;
+    text-decoration: none;
+    color: white;
+    
+}
+.headerlink{    
+    justify-items: center;
+    text-justify: center;
+    
+}
+.headerlink:hover{    
+transform: scale(1.2);
+background: rgba(0, 0, 0, 0.1);
+}
+html{
+    scroll-behavior: smooth;
+}

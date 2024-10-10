@@ -1,0 +1,54 @@
+@use "colors";
+@use "sizes";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.TitleBox {
+    background-color: color.$cygan-pastel ;
+    text-align: center;
+    font-size: $boxSize/4;
+}
+@mixin box{
+    width: $boxSize;
+    aspect-ratio: 1;
+    border: 3px green solid;
+    margin: sizes.$spacer;
+}
+@mixin flexer{
+    display: flex;
+    gap: sizes.$spacer;
+    margin-inline: auto;
+    margin-block: sizes.$spacer;
+    justify-content: center;
+    align-items: center;  
+}
+.fRow{
+    @include flexer;
+    width: 50%;
+    background: $col5;
+    .box{
+        @include box;
+        background: $col1;
+    }
+}
+.fCol{
+    @include flexer;
+    flex-direction: column;
+    width: 60%;
+    background: $col4;
+    .box{
+        @include box;
+        background: $col6;
+    }
+}
+.Frame{
+    width: 75%;
+    display: flex;
+    gap:sizes.$spacer;
+    margin-inline: auto;
+    margin-block: sizes.$spacer;
+}

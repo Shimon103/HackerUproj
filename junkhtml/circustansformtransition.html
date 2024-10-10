@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            background: grey;
+            height: 40VH;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-content: center;
+            gap: 1rem;
+            justify-items: center;
+        }
+
+        .container>div {
+            height: 15vh;
+            width: 90%;
+        }
+
+        #box1 {
+            transition: 300ms ease-in-out;
+            background:red;
+        }
+        #box1:hover{
+            width: 20%;
+        }
+
+        #box2 {
+            transition: 3000ms ease-in-out;
+            background:pink
+        }
+        #box2:hover{
+            transition: 3000ms ease-in-out;
+
+            background: linear-gradient(black, pink);
+        }
+
+        #box3 {
+            transition: 300ms ease-in-out;
+            background:blue
+        }
+        #box3:hover {
+            transform: translateY(30px)
+        }
+
+        #box4 {
+            transition: 300ms ease-in-out;
+            background:magenta
+        }
+        #box4:hover {
+            transform: scale(1.2);
+        }
+
+        #box5 {
+            transition: 300ms ease-in-out;
+            background:brown
+        }
+        #box5:hover {
+            transform: rotate(60deg);
+            
+        }
+
+        #box6{
+            transition: 300ms ease-in-out;
+            background:cyan
+        }
+        #box6:hover{
+            place-content: 'hello';
+        }
+
+        body {
+            padding: 2rem;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+        <div id="box5"></div>
+        <div id="box6"></div>
+    </div>
+</body>
+
+</html>

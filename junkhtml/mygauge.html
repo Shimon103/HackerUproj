@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+        }
+
+        .out {
+            width: 500px;
+            aspect-ratio: 1;
+            background-image: conic-gradient(from 240deg, black 0% 66%, white 66% 100%);
+
+        }
+
+        .in {
+            width: 95%;
+            aspect-ratio: 1;
+            background-image: conic-gradient(from 240deg, gold 0% 64%, white 30% 100%);
+        }
+
+        .lable {
+            width: 90%;
+            background: linear-gradient(to top, white 25%, grey 25%, white);
+            aspect-ratio: 1;
+            font-size: 4rem;
+        }
+
+        h1 {
+            background: linear-gradient(red, blue);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+.arsenal{
+    background-image: url(/img/arsenal.webp);
+    height: 400px;
+    border-radius: 0%;
+    background-attachment: fixed;
+}
+.feet{
+    height: 500px;
+}
+    </style>
+</head>
+
+<body>
+
+    <h1>How good is the ring?</h1>
+    <div class="out">
+        <div class="in">
+            <div class="lable">98% gold</div>
+        </div>
+    </div>
+    <div class="arsenal">
+
+    </div>
+<div class="feet"></div>
+</body>
+
+</html>

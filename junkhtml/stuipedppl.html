@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background: yellow;
+        }
+        h1{
+            font-size: 5rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+        .wrapper{
+                width: 80%;
+                height: fit-content;
+        }
+        .resp{
+            width: 20%;
+            height: 50px;
+            border: 1px solid black;
+            display: inline-block;
+            background: black;
+        }
+        @media (max-width:1200px) and (min-width:780px) {
+            header{
+                background: red;
+            }
+
+            h1{
+                font-size: 3rem;
+
+            }
+            p{
+                font-size: 1rem;
+            }
+            .resp{
+            width: 30%;
+            background: grey;
+        }
+    }
+        @media (max-width:779px) {
+            header{
+                background: blue;
+            }
+
+            h1{
+                font-size: 2rem;
+
+            }
+            p{
+                font-size: 0.5rem;
+            }
+            .resp{
+            width: 40%;
+            background: yellow;
+        }
+
+        }
+        .namewithgrid{
+            display: grid;
+            grid-template-columns: repeat(24,10px);
+            gap: 1px;
+            background: black;
+            
+        }
+        .namewithgrid>div{
+            background: grey;
+            height: 10px;
+        }
+        .namewithgrid>div:nth-child(1){
+            grid-area:1/1/1/4;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(2){
+            grid-area:2/1/2/1;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(3){
+            grid-area:3/1/3/4;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(4){
+            grid-area:4/3/4/3;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(5){
+            grid-area:5/1/6/4;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(6){
+            grid-area:1/5/6/5;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(7){
+            grid-area:3/6/4/6;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(8){
+            grid-area:3/7/6/7;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(9){
+            grid-area:1/9/2/9;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(10){
+            grid-area:3/9/6/9;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(11){
+            grid-area:2/11/6/11;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(12){
+            grid-area:3/12/3/16;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(13){
+            grid-area:4/13/6/13;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(14){
+            grid-area:4/15/6/15;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(15){
+            grid-area:3/17/6/17;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(16){
+            grid-area:3/19/6/19;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(17){
+            grid-area:3/18/3/18;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(18){
+            grid-area:5/18/5/18;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(19){
+            grid-area:2/21/6/21;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(20){
+            grid-area:3/23/6/23;
+            background: transparent;
+        }
+        .namewithgrid>div:nth-child(21){
+            grid-area:3/22/3/22;
+            background: transparent;
+        }
+
+    </style>
+</head>
+<body>
+    <header>this is a header</header>
+    <div class="ppl">
+        <h1>This is an h1 element</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex praesentium vel nihil tempore ratione consequuntur sapiente veniam dolore consequatur saepe, excepturi nemo assumenda unde, perferendis voluptatum exercitationem officiis harum. Delectus!</p>
+
+    </div>
+
+    <div class="wrapper">
+        <div class="resp"></div>
+        <div class="resp"></div>
+        <div class="resp"></div>
+        <div class="resp"></div>
+        <div class="resp"></div>
+        <div class="resp"></div>
+        <div class="resp"></div>
+        <div class="resp"></div>
+        <div class="resp"></div>
+        <div class="resp"></div>
+        <div class="resp"></div>
+        <div class="resp"></div>
+    </div>
+
+    <div class="namewithgrid">
+        <div id="numb1"></div>
+        <div id="numb2"></div>
+        <div id="numb3"></div>
+        <div id="numb4"></div>
+        <div id="numb5"></div>
+        <div id="numb6"></div>
+        <div id="numb7"></div>
+        <div id="numb8"></div>
+        <div id="numb9"></div>
+        <div id="numb10"></div>
+        <div id="numb11"></div>
+        <div id="numb12"></div>
+        <div id="numb13"></div>
+        <div id="numb14"></div>
+        <div id="numb15"></div>
+        <div id="numb16"></div>
+        <div id="numb17"></div>
+        <div id="numb18"></div>
+        <div id="numb19"></div>
+        <div id="numb20"></div>
+        <div id="numb21"></div>
+        <div id="numb22"></div>
+        <div id="numb23"></div>
+        <div id="numb24"></div>
+        <div id="numb25"></div>
+        <div id="numb26"></div>
+        <div id="numb27"></div>
+        <div id="numb28"></div>
+        <div id="numb29"></div>
+        <div id="numb30"></div>
+        <div id="numb31"></div>
+        <div id="numb32"></div>
+        <div id="numb33"></div>
+        <div id="numb34"></div>
+        <div id="numb35"></div>
+        <div id="numb36"></div>
+        <div id="numb37"></div>
+        <div id="numb38"></div>
+        <div id="numb39"></div>
+        <div id="numb40"></div>
+        <div id="numb41"></div>
+        <div id="numb42"></div>
+        <div id="numb43"></div>
+        <div id="numb44"></div>
+        <div id="numb45"></div>
+        <div id="numb46"></div>
+        <div id="numb47"></div>
+        <div id="numb48"></div>
+        <div id="numb49"></div>
+        <div id="numb50"></div>
+        <div id="numb51"></div>
+        <div id="numb52"></div>
+        <div id="numb53"></div>
+        <div id="numb54"></div>
+        <div id="numb55"></div>
+        <div id="numb56"></div>
+        <div id="numb57"></div>
+        <div id="numb58"></div>
+        <div id="numb59"></div>
+        <div id="numb60"></div>
+        <div id="numb61"></div>
+        <div id="numb62"></div>
+        <div id="numb63"></div>
+        <div id="numb64"></div>
+        <div id="numb65"></div>
+        <div id="numb66"></div>
+        <div id="numb67"></div>
+        <div id="numb68"></div>
+        <div id="numb69"></div>
+        <div id="numb70"></div>
+        <div id="numb71"></div>
+        <div id="numb72"></div>
+        <div id="numb73"></div>
+        <div id="numb74"></div>
+        <div id="numb75"></div>
+        <div id="numb76"></div>
+        <div id="numb77"></div>
+        <div id="numb78"></div>
+        <div id="numb79"></div>
+        <div id="numb80"></div>
+        <div id="numb81"></div>
+        <div id="numb82"></div>
+        <div id="numb83"></div>
+        <div id="numb84"></div>
+        <div id="numb85"></div>
+        <div id="numb86"></div>
+        <div id="numb87"></div>
+        <div id="numb88"></div>
+        <div id="numb89"></div>
+        <div id="numb90"></div>
+        <div id="numb91"></div>
+        <div id="numb92"></div>
+        <div id="numb93"></div>
+        <div id="numb94"></div>
+        <div id="numb95"></div>
+        <div id="numb96"></div>
+        <div id="numb97"></div>
+        <div id="numb98"></div>
+        <div id="numb99"></div>
+        <div id="numb100"></div>
+        <div id="numb101"></div>
+        <div id="numb102"></div>
+        <div id="numb103"></div>
+        <div id="numb104"></div>
+        <div id="numb105"></div>
+        <div id="numb105"></div>
+        <div id="numb105"></div>
+        <div id="numb105"></div>
+        <div id="numb105"></div>
+        <div id="numb105"></div>
+        <div id="numb105"></div>
+        <div id="numb105"></div>
+        <div id="numb105"></div>
+ 
+
+
+
+
+    </div>
+
+</body>
+</html>

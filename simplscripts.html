@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="pageBody">
+    <h1>hi i am the only one here!</h1>
+
+    
+<script>
+    function loadTable() {
+        const myPage = document.getElementById('pageBody')
+        const myTable = document.createElement('div')
+        myTable.class = 'scriptTable'
+        myTable.innerHTML +=`<table>
+    <thead>
+        <tr>
+            <td>headers for life1</td>
+            <td>headers for life2</td>
+            <td>headers for life3</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>row 1 data</td>
+            <td>row 1 data</td>
+            <td>row 1 data</td>
+        </tr>
+        <tr>
+            <td>row 2 data</td>
+            <td>row 2 data</td>
+            <td>row 2 data</td>
+        </tr>
+        <tr>
+            <td>row 3 data</td>
+            <td>row 3 data</td>
+            <td>row 3 data</td>
+        </tr>
+        <tr>
+            <td>row 4 data</td>
+            <td>row 4 data</td>
+            <td>row 4 data</td>
+        </tr>
+
+    </tbody>
+</table>
+        `
+        myPage.appendChild(myTable)
+        
+    }
+    window.onload = loadTable();
+</script>
+</body>
+
+</html>

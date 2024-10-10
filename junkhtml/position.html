@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row1{
+            background-color: aqua;
+            height: 30vh;
+        }
+        .row1>div{
+            background: grey;
+            border: 1px solid black;
+            display: inline-block;
+            height: 25vh;
+            width: 15%;
+        }
+        .row1>#demo3{
+            background: red;
+            position: relative;
+            top: 20px
+        }
+        .row2{
+
+            height: 30vh;
+        }
+        .row2>div{
+            background: grey;
+            border: 1px solid black;
+            display: inline-block;
+            height: 25vh;
+            width: 15%;
+            z-index: 2;
+        }
+        .row2>#demo3{
+            background: red;
+            position: relative;
+            top: 20px;
+            left: 50px;
+            z-index: -1;
+        }
+        .row3{
+            height: 30vh;
+            position: relative;
+            border: 1px solid black;
+        }
+        .row3>div{
+            background: grey;
+            border: 1px solid black;
+            display: inline-block;
+            height: 10vh;
+            width: 15%;
+            z-index: 2;
+        }
+        .row3>#demo1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: red;
+
+        }
+        .row3>#demo2{
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: blue;
+
+        }
+        .row3>#demo3{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: magenta;
+
+        }
+        .row3>#demo4{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: orange;
+
+        }
+        header{
+            position: sticky;
+            top:0;
+            height: 10vh;
+            background: yellow;
+            margin-bottom:10px ;
+            z-index: 100;
+            
+        }
+        body{
+            padding: 0px;
+        }
+        .buffer{
+            height: 400vh;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>This is a header</header>
+    <div class="row1">
+        <div id="demo1"></div>
+        <div id="demo2"></div>
+        <div id="demo3"></div>
+        <div id="demo4"></div>
+        <div id="demo5"></div>
+    </div>
+
+    <div class="row2">
+        <div id="demo1"></div>
+        <div id="demo2"></div>
+        <div id="demo3"></div>
+        <div id="demo4"></div>
+        <div id="demo5"></div>
+    </div>
+    <div class="row3">
+        <div id="demo1"></div>
+        <div id="demo2"></div>
+        <div id="demo3"></div>
+        <div id="demo4"></div>
+    </div>
+
+    <div class="buffer"></div>
+
+
+</body>
+</html>

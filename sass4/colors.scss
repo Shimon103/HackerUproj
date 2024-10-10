@@ -1,0 +1,17 @@
+$myColors:(
+    "magenta-dark": #9b59b6,
+    "green-dark": #146e3a,
+    "cygan-pastel": #56b9ca,
+    "azure-dark-50": #85bed657,
+    "green-dark-50": #85d6a457,
+    "brown-dirt": #a7721e,
+    );
+
+@each $colorName, $color in $myColors {
+    .bg-#{"" + $colorName} {
+        background: $color;
+    }
+    .TXT-#{"" + $colorName} {
+        color: $color;
+    }
+}

@@ -1,0 +1,58 @@
+$col1: #9b59b6;
+$col2: #146e3a;
+$col3: #56b9ca;
+$col4: #85bed657;
+$col5: #85d6a457;
+$col6: #a7721e;
+$boxSize: 100vh/7;
+$spacer: 0.5rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.TitleBox {
+    background-color: $col3 ;
+    text-align: center;
+    font-size: $boxSize/4;
+}
+@mixin box{
+    width: $boxSize;
+    aspect-ratio: 1;
+    border: 3px green solid;
+    margin: $spacer;
+}
+@mixin flexer{
+    display: flex;
+    gap: $spacer;
+    margin-inline: auto;
+    margin-block: $spacer;
+    justify-content: center;
+    align-items: center;  
+}
+.fRow{
+    @include flexer;
+    width: 50%;
+    background: $col5;
+    .box{
+        @include box;
+        background: $col1;
+    }
+}
+.fCol{
+    @include flexer;
+    flex-direction: column;
+    width: 60%;
+    background: $col4;
+    .box{
+        @include box;
+        background: $col6;
+    }
+}
+.Frame{
+    width: 75%;
+    display: flex;
+    gap:$spacer;
+    margin-inline: auto;
+    margin-block: $spacer;
+}

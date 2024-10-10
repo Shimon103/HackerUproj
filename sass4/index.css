@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.TitleBox {
+  background-color: #56b9ca;
+  text-align: center;
+  font-size: 3.5714285714vh;
+}
+
+.fRow {
+  display: flex;
+  gap: 0.5rem;
+  margin-inline: auto;
+  margin-block: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background: rgba(133, 214, 164, 0.3411764706);
+}
+.fRow .box {
+  width: 14.2857142857vh;
+  aspect-ratio: 1;
+  border: 3px green solid;
+  margin: 0.5rem;
+  background: #9b59b6;
+}
+
+.fCol {
+  display: flex;
+  gap: 0.5rem;
+  margin-inline: auto;
+  margin-block: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  background: rgba(133, 190, 214, 0.3411764706);
+}
+.fCol .box {
+  width: 14.2857142857vh;
+  aspect-ratio: 1;
+  border: 3px green solid;
+  margin: 0.5rem;
+  background: #a7721e;
+}
+
+.Frame {
+  width: 75%;
+  display: flex;
+  gap: 0.5rem;
+  margin-inline: auto;
+  margin-block: 0.5rem;
+}/*# sourceMappingURL=index.css.map */

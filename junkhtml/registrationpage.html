@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2,h3,h4,h5,h6{
+            width: 200px;
+            height: 100px;
+            padding-top: 20px;
+            text-align: center;
+            
+        }
+        h2{background:grey ;
+            border-radius:200px;
+            text-align: start;
+            justify-self: center;
+
+        }
+        h3{background:greenyellow ;
+            border-radius: 400% 300% 0% 0%;
+
+        }
+        h4{background:red ;
+            border-radius: 2rem 5rem 8rem 9rem
+
+        }
+        h5{background:brown ;
+            border-radius: 0px 50% 0px 50%;
+
+        }
+        h6{background:magenta ;
+            border-radius: 50% 25% 100% 25%;
+
+        }
+        .contain{
+            background: chocolate;
+            height: 2rem;
+            padding: 2%;
+            width: 500px;
+        }
+        .contain>div{
+            width: 18%;
+            border: 2px black solid;
+            display: inline-block;
+            text-align:center ;
+            box-shadow: 2px 2px 5px white;
+        }
+        #section1{
+            background: white;
+        }
+        #section2{
+            background: green;
+        }
+        #section3{
+            background: purple;
+        }
+        #section4{
+            background: aquamarine;
+        }
+        #section5{
+            background: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Register here</h1>
+    <div class="contain">
+        <div id="section1">cow 1</div>
+        <div id="section2">cow 2</div>
+        <div id="section3">cow 3</div>
+        <div id="section4">cow 4</div>
+        <div id="section5">cow 5</div>
+    </div>
+
+    <h2>bored</h2>
+    <h3>out</h3>
+    <h4>of</h4>
+    <h5>my</h5>
+    <h6>mind</h6>
+
+    <form action="">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="firstname">First name: </label>
+            <input type="text" name="firstname" placeholder="Ex: Nisim"><br>
+            <label for="Lastname">Last Name: </label>
+            <input type="text" name="Lastname" placeholder="Ex: Cohen"><br>
+            <label for="age">Date of birth</label>
+            <input type="date" name="age">
+        </fieldset>
+        <fieldset>
+            <legend>Contact info</legend>
+            <label for="Phone">Phone number: </label>
+            <select name="Phone" id="">
+                <option value="050">050</option>
+                <option value="052">052</option>
+                <option value="053">053</option>
+                <option value="054">054</option>
+                <option value="057">057</option>
+                <option value="058">058</option>
+            </select>
+            <input type="text" name="Phone" pattern="[0-9]{7}" maxlength="7"/><br>
+
+            <label for="Email">Email: </label>
+            <input type="text" name="Email" placeholder="Ex: you@email.end"><br>
+        </fieldset>
+        <fieldset>
+            <legend> Join our community</legend>
+            <label for="mailgroup">Join our mail group?</label>
+            <input type="radio" name="mailgroup" id="1">No
+            <input type="radio" name="mailgroup" id="2">Yes <br>
+            <label for="events">Get calender invites for events?</label>
+            <input type="radio" name="events" id="1">No
+            <input type="radio" name="events" id="2">Yes <br>
+        </fieldset>
+        <input type="submit" value="Submit application">
+
+
+    </form>
+</body>
+</html>
